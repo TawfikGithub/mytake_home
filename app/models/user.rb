@@ -4,6 +4,6 @@ class User < ApplicationRecord
   before_save :format_email
 
   def format_email
-    email.downcase!
+    self.email.downcase!
   end
 end
